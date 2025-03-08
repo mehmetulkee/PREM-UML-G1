@@ -1,0 +1,211 @@
+
+Agony EFootball League	
+1. HAFTA	
+Manchester United	vs	Roma 	
+Newcastle United	vs	Leverkusen	
+Juventus	vs	Santos	
+Manchester City	vs	Liverpool	
+Bayern Munih	vs	Feyenoord	
+Milan	vs	Napoli	
+Atalanta	vs	Psv	
+Arsenal	vs	Porto	
+Ajax	vs	PSG	
+İnter	vs	Real Madrid	
+2. HAFTA	
+Roma 	vs	Real Madrid	
+PSG	vs	İnter	
+Porto	vs	Ajax	
+Psv	vs	Arsenal	
+Napoli	vs	Atalanta	
+Feyenoord	vs	Milan	
+Liverpool	vs	Bayern Munih	
+Santos	vs	Manchester City	
+Leverkusen	vs	Juventus	
+Manchester United	vs	Newcastle United	
+3. HAFTA	
+Newcastle United	vs	Roma 	
+Juventus	vs	Manchester United	
+Manchester City	vs	Leverkusen	
+Bayern Munih	vs	Santos	
+Milan	vs	Liverpool	
+Atalanta	vs	Feyenoord	
+Arsenal	vs	Napoli	
+Ajax	vs	Psv	
+İnter	vs	Porto	
+Real Madrid	vs	PSG	
+4. HAFTA	
+Roma 	vs	PSG	
+Porto	vs	Real Madrid	
+Psv	vs	İnter	
+Napoli	vs	Ajax	
+Feyenoord	vs	Arsenal	
+Liverpool	vs	Atalanta	
+Santos	vs	Milan	
+Leverkusen	vs	Bayern Munih	
+Manchester United	vs	Manchester City	
+Newcastle United	vs	Juventus	
+5. HAFTA	
+Juventus	vs	Roma 	
+Manchester City	vs	Newcastle United	
+Bayern Munih	vs	Manchester United	
+Milan	vs	Leverkusen	
+Atalanta	vs	Santos	
+Arsenal	vs	Liverpool	
+Ajax	vs	Feyenoord	
+İnter	vs	Napoli	
+Real Madrid	vs	Psv	
+PSG	vs	Porto	
+6. HAFTA	
+Roma 	vs	Porto	
+Psv	vs	PSG	
+Napoli	vs	Real Madrid	
+Feyenoord	vs	İnter	
+Liverpool	vs	Ajax	
+Santos	vs	Arsenal	
+Leverkusen	vs	Atalanta	
+Manchester United	vs	Milan	
+Newcastle United	vs	Bayern Munih	
+Juventus	vs	Manchester City	
+7. HAFTA	
+Manchester City	vs	Roma 	
+Bayern Munih	vs	Juventus	
+Milan	vs	Newcastle United	
+Atalanta	vs	Manchester United	
+Arsenal	vs	Leverkusen	
+Ajax	vs	Santos	
+İnter	vs	Liverpool	
+Real Madrid	vs	Feyenoord	
+PSG	vs	Napoli	
+Porto	vs	Psv	
+8. HAFTA	
+Roma 	vs	Psv	
+Napoli	vs	Porto	
+Feyenoord	vs	PSG	
+Liverpool	vs	Real Madrid	
+Santos	vs	İnter	
+Leverkusen	vs	Ajax	
+Manchester United	vs	Arsenal	
+Newcastle United	vs	Atalanta	
+Juventus	vs	Milan	
+Manchester City	vs	Bayern Munih	
+9. HAFTA	
+Bayern Munih	vs	Roma 	
+Milan	vs	Manchester City	
+Atalanta	vs	Juventus	
+Arsenal	vs	Newcastle United	
+Ajax	vs	Manchester United	
+İnter	vs	Leverkusen	
+Real Madrid	vs	Santos	
+PSG	vs	Liverpool	
+Porto	vs	Feyenoord	
+Psv	vs	Napoli	
+10. HAFTA	
+Roma 	vs	Napoli	
+Feyenoord	vs	Psv	
+Liverpool	vs	Porto	
+Santos	vs	PSG	
+Leverkusen	vs	Real Madrid	
+Manchester United	vs	İnter	
+Newcastle United	vs	Ajax	
+Juventus	vs	Arsenal	
+Manchester City	vs	Atalanta	
+Bayern Munih	vs	Milan	
+11. HAFTA	
+Milan	vs	Roma 	
+Atalanta	vs	Bayern Munih	
+Arsenal	vs	Manchester City	
+Ajax	vs	Juventus	
+İnter	vs	Newcastle United	
+Real Madrid	vs	Manchester United	
+PSG	vs	Leverkusen	
+Porto	vs	Santos	
+Psv	vs	Liverpool	
+Napoli	vs	Feyenoord	
+12. HAFTA	
+Roma 	vs	Feyenoord	
+Liverpool	vs	Napoli	
+Santos	vs	Psv	
+Leverkusen	vs	Porto	
+Manchester United	vs	PSG	
+Newcastle United	vs	Real Madrid	
+Juventus	vs	İnter	
+Manchester City	vs	Ajax	
+Bayern Munih	vs	Arsenal	
+Milan	vs	Atalanta	
+13. HAFTA	
+Atalanta	vs	Roma 	
+Arsenal	vs	Milan	
+Ajax	vs	Bayern Munih	
+İnter	vs	Manchester City	
+Real Madrid	vs	Juventus	
+PSG	vs	Newcastle United	
+Porto	vs	Manchester United	
+Psv	vs	Leverkusen	
+Napoli	vs	Santos	
+psv	vs	Liverpool	
+14. HAFTA	
+Roma 	vs	Liverpool	
+Santos	vs	Feyenoord	
+Leverkusen	vs	Napoli	
+Manchester United	vs	Psv	
+Newcastle United	vs	Porto	
+Juventus	vs	PSG	
+Manchester City	vs	Real Madrid	
+Bayern Munih	vs	İnter	
+Milan	vs	Ajax	
+Atalanta	vs	Arsenal	
+15. HAFTA	
+Arsenal	vs	Roma 	
+Ajax	vs	Atalanta	
+İnter	vs	Milan	
+Real Madrid	vs	Bayern Munih	
+PSG	vs	Manchester City	
+Porto	vs	Juventus	
+Psv	vs	Newcastle United	
+Napoli	vs	Manchester United	
+Feyenoord	vs	Leverkusen	
+Liverpool	vs	Santos	
+16. HAFTA	
+Roma 	vs	Santos	
+Leverkusen	vs	Liverpool	
+Manchester United	vs	Feyenoord	
+Newcastle United	vs	Napoli	
+Juventus	vs	Psv	
+Manchester City	vs	Porto	
+Bayern Munih	vs	PSG	
+Milan	vs	Real Madrid	
+Atalanta	vs	İnter	
+Arsenal	vs	Ajax	
+17. HAFTA	
+Ajax	vs	Roma 	
+İnter	vs	Arsenal	
+Real Madrid	vs	Atalanta	
+PSG	vs	Milan	
+Porto	vs	Bayern Munih	
+Psv	vs	Manchester City	
+Napoli	vs	Juventus	
+Feyenoord	vs	Newcastle United	
+Liverpool	vs	Manchester United	
+Santos	vs	Leverkusen	
+18. HAFTA	
+Roma 	vs	Leverkusen	
+Manchester United	vs	Santos	
+Newcastle United	vs	Liverpool	
+Juventus	vs	Feyenoord	
+Manchester City	vs	Napoli	
+Bayern Munih	vs	Psv	
+Milan	vs	Porto	
+Atalanta	vs	PSG	
+Arsenal	vs	Real Madrid	
+Ajax	vs	İnter	
+19. HAFTA	
+İnter	vs	Roma 	
+Real Madrid	vs	Ajax	
+PSG	vs	Arsenal	
+Porto	vs	Atalanta	
+Psv	vs	Milan	
+Napoli	vs	Bayern Munih	
+Feyenoord	vs	Manchester City	
+Liverpool	vs	Juventus	
+Santos	vs	Newcastle United	
+Leverkusen	vs	Manchester United

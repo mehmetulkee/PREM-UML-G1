@@ -1,20 +1,21 @@
 import { Link, useLocation } from "wouter";
 import { useAuth } from "@/hooks/use-auth";
 import { Button } from "@/components/ui/button";
-import { Trophy, Calendar, BarChart2, Plus } from "lucide-react";
+import { Trophy, Calendar, BarChart2, Plus, ListOrdered } from "lucide-react";
 
 export function Navbar() {
   const [location] = useLocation();
   const { user, logoutMutation } = useAuth();
 
   const navItems = [
-    { href: "/standings", label: "League Table", icon: Trophy },
-    { href: "/matches", label: "Matches", icon: Calendar },
-    { href: "/stats", label: "Statistics", icon: BarChart2 },
+    { href: "/standings", label: "Puan Durumu", icon: Trophy },
+    { href: "/matches", label: "Maçlar", icon: Calendar },
+    { href: "/fixtures", label: "Fikstür", icon: ListOrdered },
+    { href: "/stats", label: "İstatistikler", icon: BarChart2 },
   ];
 
   if (user?.isAdmin) {
-    navItems.push({ href: "/matches/add", label: "Add Match", icon: Plus });
+    navItems.push({ href: "/matches/add", label: "Maç Ekle", icon: Plus });
   }
 
   return (
@@ -22,7 +23,7 @@ export function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/">
-            <a className="text-xl font-bold">Football League</a>
+            <a className="text-xl font-bold">Futbol Ligi</a>
           </Link>
 
           <div className="hidden md:flex items-center gap-4">
@@ -53,13 +54,13 @@ export function Navbar() {
                   onClick={() => logoutMutation.mutate()}
                   disabled={logoutMutation.isPending}
                 >
-                  Logout
+                  Çıkış Yap
                 </Button>
               </div>
             ) : (
               <Link href="/auth">
                 <a>
-                  <Button>Login</Button>
+                  <Button>Giriş Yap</Button>
                 </a>
               </Link>
             )}

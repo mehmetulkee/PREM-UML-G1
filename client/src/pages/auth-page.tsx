@@ -21,15 +21,11 @@ import {
 } from "@/components/ui/form";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useLocation } from "wouter";
+import React from 'react';
 
 export default function AuthPage() {
   const { user, loginMutation, registerMutation } = useAuth();
   const [, setLocation] = useLocation();
-
-  if (user) {
-    setLocation("/");
-    return null;
-  }
 
   const loginForm = useForm({
     resolver: zodResolver(insertUserSchema),
@@ -47,20 +43,27 @@ export default function AuthPage() {
     },
   });
 
+  if (user) {
+    // Use useEffect for navigation after render
+    React.useEffect(() => {
+      setLocation("/");
+    }, [user, setLocation]);
+  }
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-background p-4">
       <Card className="w-full max-w-md">
         <CardHeader>
-          <CardTitle>Football League Management</CardTitle>
+          <CardTitle>Futbol Ligi Yönetimi</CardTitle>
           <CardDescription>
-            Login or register to manage football league matches
+            Maç sonuçlarını görmek için giriş yapın veya kayıt olun
           </CardDescription>
         </CardHeader>
         <CardContent>
           <Tabs defaultValue="login">
             <TabsList className="grid w-full grid-cols-2">
-              <TabsTrigger value="login">Login</TabsTrigger>
-              <TabsTrigger value="register">Register</TabsTrigger>
+              <TabsTrigger value="login">Giriş Yap</TabsTrigger>
+              <TabsTrigger value="register">Kayıt Ol</TabsTrigger>
             </TabsList>
 
             <TabsContent value="login">
@@ -76,7 +79,7 @@ export default function AuthPage() {
                     name="username"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Username</FormLabel>
+                        <FormLabel>Kullanıcı Adı</FormLabel>
                         <FormControl>
                           <Input {...field} />
                         </FormControl>
@@ -89,7 +92,7 @@ export default function AuthPage() {
                     name="password"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Password</FormLabel>
+                        <FormLabel>Şifre</FormLabel>
                         <FormControl>
                           <Input type="password" {...field} />
                         </FormControl>
@@ -102,7 +105,7 @@ export default function AuthPage() {
                     className="w-full"
                     disabled={loginMutation.isPending}
                   >
-                    Login
+                    Giriş Yap
                   </Button>
                 </form>
               </Form>
@@ -121,7 +124,7 @@ export default function AuthPage() {
                     name="username"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Username</FormLabel>
+                        <FormLabel>Kullanıcı Adı</FormLabel>
                         <FormControl>
                           <Input {...field} />
                         </FormControl>
@@ -134,7 +137,7 @@ export default function AuthPage() {
                     name="password"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Password</FormLabel>
+                        <FormLabel>Şifre</FormLabel>
                         <FormControl>
                           <Input type="password" {...field} />
                         </FormControl>
@@ -147,7 +150,7 @@ export default function AuthPage() {
                     className="w-full"
                     disabled={registerMutation.isPending}
                   >
-                    Register
+                    Kayıt Ol
                   </Button>
                 </form>
               </Form>

@@ -7,6 +7,7 @@ import { Navbar } from "@/components/layout/navbar";
 import StandingsPage from "@/pages/standings-page";
 import MatchesPage from "@/pages/matches-page";
 import StatsPage from "@/pages/stats-page";
+import FixturesPage from "@/pages/fixtures-page";
 import AddMatchPage from "@/pages/add-match-page";
 import AuthPage from "@/pages/auth-page";
 import NotFound from "@/pages/not-found";
@@ -20,6 +21,7 @@ function Router() {
         <Route path="/" component={StandingsPage} />
         <Route path="/standings" component={StandingsPage} />
         <Route path="/matches" component={MatchesPage} />
+        <Route path="/fixtures" component={FixturesPage} />
         <Route path="/stats" component={StatsPage} />
         <ProtectedRoute path="/matches/add" adminOnly>
           <AddMatchPage />
