@@ -23,10 +23,10 @@ export const matches = pgTable("matches", {
   playedAt: timestamp("played_at").notNull(),
 });
 
-export const insertUserSchema = createInsertSchema(users).pick({
-  username: true,
-  password: true,
-});
+export const insertUserSchema = createInsertSchema(users, {
+  username: z.string().min(1, "Kullanıcı adı gerekli"),
+  password: z.string().min(6, "Şifre en az 6 karakter olmalı"),
+}).omit({ id: true, isAdmin: true });
 
 export const insertMatchSchema = createInsertSchema(matches);
 

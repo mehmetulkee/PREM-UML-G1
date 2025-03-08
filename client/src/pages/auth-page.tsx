@@ -21,11 +21,17 @@ import {
 } from "@/components/ui/form";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useLocation } from "wouter";
-import React from 'react';
+import { useEffect } from "react";
 
 export default function AuthPage() {
   const { user, loginMutation, registerMutation } = useAuth();
   const [, setLocation] = useLocation();
+
+  useEffect(() => {
+    if (user) {
+      setLocation("/");
+    }
+  }, [user, setLocation]);
 
   const loginForm = useForm({
     resolver: zodResolver(insertUserSchema),
@@ -43,12 +49,13 @@ export default function AuthPage() {
     },
   });
 
-  if (user) {
-    // Use useEffect for navigation after render
-    React.useEffect(() => {
-      setLocation("/");
-    }, [user, setLocation]);
-  }
+  const handleLogin = (data: any) => {
+    loginMutation.mutate(data);
+  };
+
+  const handleRegister = (data: any) => {
+    registerMutation.mutate(data);
+  };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-background p-4">
@@ -69,9 +76,7 @@ export default function AuthPage() {
             <TabsContent value="login">
               <Form {...loginForm}>
                 <form
-                  onSubmit={loginForm.handleSubmit((data) =>
-                    loginMutation.mutate(data)
-                  )}
+                  onSubmit={loginForm.handleSubmit(handleLogin)}
                   className="space-y-4"
                 >
                   <FormField
@@ -114,9 +119,7 @@ export default function AuthPage() {
             <TabsContent value="register">
               <Form {...registerForm}>
                 <form
-                  onSubmit={registerForm.handleSubmit((data) =>
-                    registerMutation.mutate(data)
-                  )}
+                  onSubmit={registerForm.handleSubmit(handleRegister)}
                   className="space-y-4"
                 >
                   <FormField

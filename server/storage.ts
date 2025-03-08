@@ -11,14 +11,14 @@ export interface IStorage {
   getTeams(): Promise<Team[]>;
   getMatches(): Promise<Match[]>;
   addMatch(match: Omit<Match, "id">): Promise<Match>;
-  sessionStore: session.SessionStore;
+  sessionStore: ReturnType<typeof MemoryStore>;
 }
 
 export class MemStorage implements IStorage {
   private users: Map<number, User>;
   private teams: Map<number, Team>;
   private matches: Map<number, Match>;
-  public sessionStore: session.SessionStore;
+  public sessionStore: ReturnType<typeof MemoryStore>;
   private currentId: number;
   private currentMatchId: number;
 
