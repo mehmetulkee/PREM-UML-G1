@@ -10,6 +10,9 @@ deploymentTarget = "cloudrun"
 run = ["sh", "-c", "npm run start"]
 build = ["sh", "-c", "npm run build"]
 
+[env]
+REPLIT_KEEP_PACKAGE_DEV_DEPENDENCIES = "1"
+
 [[ports]]
 localPort = 3000
 externalPort = 3000
