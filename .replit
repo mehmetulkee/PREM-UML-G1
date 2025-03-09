@@ -1,4 +1,4 @@
-modules = ["nodejs-20", "bash", "web"]
+modules = ["bash", "nodejs-20", "python-3.11", "web"]
 run = "npm run dev"
 hidden = [".config", ".git", "generated-icon.png", "node_modules", "dist"]
 
@@ -7,7 +7,7 @@ channel = "stable-24_05"
 
 [deployment]
 deploymentTarget = "cloudrun"
-run = ["sh", "-c", "npm run start"]
+run = ["sh", "-c", "python3 -m streamlit run main.py --server.port=$PORT --server.address=0.0.0.0 --server.headless=true --server.enableCORS=false"]
 build = ["sh", "-c", "npm install && npm install -g vite && npm run build"]
 
 [env]
@@ -22,7 +22,7 @@ localPort = 5000
 externalPort = 80
 
 [workflows]
-runButton = "Start application"
+runButton = "Run Streamlit"
 
 [[workflows.workflow]]
 name = "Project"
@@ -47,3 +47,11 @@ task = "packager.installForAll"
 task = "shell.exec"
 args = "npm run dev"
 waitForPort = 5000
+
+[[workflows.workflow]]
+name = "Run Streamlit"
+author = 40312258
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python3 -m streamlit run main.py --server.port=3000 --server.address=0.0.0.0 --server.headless=true --server.enableCORS=false"
