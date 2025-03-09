@@ -1,6 +1,7 @@
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
+import { createServer } from "http";
 
 const app = express();
 app.use(express.json());
@@ -53,13 +54,13 @@ app.use((req, res, next) => {
     serveStatic(app);
   }
 
-  // Use PORT environment variable with fallback to 5000
-  const port = process.env.PORT || 5000;
+  // Use PORT environment variable with fallback to 3000
+  const PORT = process.env.PORT || 3000;
   server.listen({
-    port,
+    port: PORT,
     host: "0.0.0.0", // Listen on all network interfaces
     reusePort: true,
   }, () => {
-    log(`serving on port ${port}`);
+    log(`serving on port ${PORT}`);
   });
 })();
